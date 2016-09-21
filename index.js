@@ -1,3 +1,4 @@
+// their examples put this on the client of a website so i guess it doesn't need to be that secure /shrug
 const apiKey = "0ef6e373f72f4faabf111754a0299105";
 
 const initialState = {
