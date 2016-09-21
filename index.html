@@ -223,7 +223,20 @@
 					});
 				}
 				else {
-					children.push(NextBusList({ nextBusses }));
+
+					children.push(
+						{ 
+							tagName: "h1", 
+							props: { 
+								style: {
+									color: "white",
+									fontSize: "15vh"
+								}
+							},
+							children: busLine 
+						},
+						NextBusList({ nextBusses })
+					);
 				}
 			}
 			return {
