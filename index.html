@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="https://unpkg.com/whatwg-fetch@1.0.0"></script>
 	<script type="text/javascript" src="https://unpkg.com/put-stuff-on-website@latest"></script>
 	<script>
-		const apiKey = "YOUR_API_KEY";
+		const apiKey = "0ef6e373f72f4faabf111754a0299105";
 
 		const initialState = {
 			busLine: null,
@@ -116,7 +116,7 @@
 					style: {
 						width: "80vw",
 						height: "30vh",
-						fontSize: "20vh"
+						fontSize: "10vw"
 					},
 					onkeyup: e => {
 						if (e.keyCode === 13) {
@@ -183,7 +183,7 @@
 			const listItems = nextBusses.map(bus => ({
 				tagName: "li",
 				props: {
-					style: { color: "white", fontSize: "20vh" }
+					style: { color: "white", fontSize: "10vw" }
 				},
 				children: `${bus.Minutes} Minutes`
 			}));
@@ -230,7 +230,7 @@
 							props: { 
 								style: {
 									color: "white",
-									fontSize: "15vh"
+									fontSize: "8vw"
 								}
 							},
 							children: busLine 
